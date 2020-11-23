@@ -12,6 +12,7 @@ Dockerfile for Centos8 / Apache2.4 / PHP7.4
 
 ## Using with docker-compose
 
+```yaml
 version: '2'
 services:
   phpapp:
@@ -20,6 +21,7 @@ services:
       - '8000:80'
     volumes:
       - '.:/var/www/html'
+```
 
 ## Push image to Docker hub
 
